@@ -6,7 +6,7 @@ Bem-vindo às minhas notas de programação na `linguagem C`! Estas notas foram 
 
 ## Sumário geral
 
->   [**Fundamentos da linguagem C**](./1.fundamentos/README.md)
+>   ### [**Fundamentos da linguagem C**](./1.fundamentos/README.md)
 >
 >   Nesta seção, são apresentados os conceitos fundamentais da sintaxe da `linguagem C`, incluindo a estrutura básica de um programa, tipos elementares de dados (como inteiros, caracteres e ponto flutuante) e suas operações.
 
