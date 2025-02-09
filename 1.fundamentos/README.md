@@ -183,7 +183,7 @@ Ademais, podemos alocar mais ou menos memória para os dados de tipo `int` utili
 
 Dados numéricos reais (que possuem dizima) são categorizados primitivamente como sendo do tipo `float`
 
-> um `float` aloca `4 bytes = 32 bits` na memória da máquina, dentre estes, o primeiro `bit` é utilizado para denotar o sinal $\pm$ (`0` se positivo ou `1` se negativo), os próximos são utilizados para representar o valor absoluto em notação científica ($m \times 10^{e}$), sendo os primeiros `8 bits` para representar o expoente (podendo assim representar expoentes entre $-2^8 / 2 = -128$ e $+2^8 / 2 - 1 = +127$) e os demais `23 bits` para a mantissa (tendo assim $\operatorname{log}_{10}(2^{23}) \approx 6$ digitos de precisão).
+> um `float` aloca `4 bytes = 32 bits` na memória da máquina, dentre estes, o primeiro `bit` é utilizado para denotar o sinal $\pm$ (`0` se positivo ou `1` se negativo), os próximos são utilizados para representar o valor absoluto em notação científica ($m \times 10^{e}$), sendo os primeiros `8 bits` para representar o expoente (podendo assim representar expoentes entre $-2^8 / 2 = -128$ e $+2^8 / 2 - 1 = +127$) e os demais `23 bits` para a mantissa (tendo assim ${log}_{10}(2^{23}) \approx 6$ digitos de precisão).
 
 Para a leitura e escrita de números reais com as funções da biblioteca `stdio.h` utilizamos os especificadors de formato `%f` (representação em ponto flutuante) e `%g` ou `%e` (representação científica) como placeholders para um `float`.
 
@@ -211,9 +211,9 @@ Para a leitura e escrita de números reais com as funções da biblioteca `stdio
 
 Ademais, podemos alocar mais memória para dados numéricos de modo a obter mais casas de precisão, utilizando `double` (aloca `8 bytes`) e `long double` (aloca `16 bytes`). Para a leitura e escrita de números reais com as funções da biblioteca `stdio.h` utilizamos os especificadors de formato `%lf` para `double` e `%llf` para `long double`.
 
-> um `double` aloca `8 bytes = 64 bits` na memória da máquina, dentre estes, o primeiro `bit` é utilizado para denotar o sinal $\pm$ (`0` se positivo ou `1` se negativo), os próximos são utilizados para representar o valor absoluto em notação científica ($m \times 10^{e}$), sendo os primeiros `11 bits` para representar o expoente (podendo assim representar expoentes entre $-2^{11} / 2 = -1024$ e $+2^{11} / 2 - 1 = +1023$) e os demais `52 bits` para a mantissa (tendo assim $\operatorname{log}_{10}(2^{52}) \approx 15$ digitos de precisão).
+> um `double` aloca `8 bytes = 64 bits` na memória da máquina, dentre estes, o primeiro `bit` é utilizado para denotar o sinal $\pm$ (`0` se positivo ou `1` se negativo), os próximos são utilizados para representar o valor absoluto em notação científica ($m \times 10^{e}$), sendo os primeiros `11 bits` para representar o expoente (podendo assim representar expoentes entre $-2^{11} / 2 = -1024$ e $+2^{11} / 2 - 1 = +1023$) e os demais `52 bits` para a mantissa (tendo assim ${log}_{10}(2^{52}) \approx 15$ digitos de precisão).
 
-> um `long double` aloca `16 bytes = 128 bits` na memória da máquina, dentre estes, o primeiro `bit` é utilizado para denotar o sinal $\pm$ (`0` se positivo ou `1` se negativo), os próximos são utilizados para representar o valor absoluto em notação científica ($m \times 10^{e}$), sendo os primeiros `15 bits` para representar o expoente (podendo assim representar expoentes entre $-2^{15} / 2 = -16384$ e $+2^{15} / 2 - 1 = +16383$) e os demais `112 bits` para a mantissa (tendo assim $\operatorname{log}_{10}(2^{112}) \approx 18$ digitos de precisão).
+> um `long double` aloca `16 bytes = 128 bits` na memória da máquina, dentre estes, o primeiro `bit` é utilizado para denotar o sinal $\pm$ (`0` se positivo ou `1` se negativo), os próximos são utilizados para representar o valor absoluto em notação científica ($m \times 10^{e}$), sendo os primeiros `15 bits` para representar o expoente (podendo assim representar expoentes entre $-2^{15} / 2 = -16384$ e $+2^{15} / 2 - 1 = +16383$) e os demais `112 bits` para a mantissa (tendo assim ${log}_{10}(2^{112}) \approx 18$ digitos de precisão).
 
 ##### funções matemáticas elementares do cabeçalho `math.h`
 
