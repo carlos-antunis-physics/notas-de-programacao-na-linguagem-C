@@ -346,8 +346,4 @@ de modo geral, não há efeitos de atribuir o modificador `const`, contudo é um
 
 ---
 
-<div style="text-align: right;">
-
 [voltar à página principal](../README.md)
-
-</div>
